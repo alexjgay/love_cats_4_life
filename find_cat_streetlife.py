@@ -134,6 +134,6 @@ while z < 1000:
 #    print rows
  
 
-
+print "Number of cats found :", len(list(set(list_stations_found)))
 print "List of stations where owners have found their cats"
 print list(set(list_stations_found)) 
