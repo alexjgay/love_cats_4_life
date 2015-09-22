@@ -95,12 +95,9 @@ def move_owner ():
 ##Search connections
  for owner in owners:
 #############################
-#  print(owner)
 #########search if owner is in same station than cat
   
   if owners[powner] == cats[powner]:
-#  print "##############YYYYYYYYYESSS  owner has found his cat"
-#   print "cats[powner]",cats[powner]
 #   print "owners[powner]",owners[powner]
    list_stations_found.append(int(str(cats[powner]).strip('[]')))
 
@@ -121,24 +118,16 @@ def move_owner ():
     owners[powner]=[int(list_conn[rand_npos])]
 
   powner += 1
-  #print "owner number : ", powner
 
-  #print list_conn
-  #print "tab of owners"
-
- #print owners
 
 ##
 
 z = 0
 
 # While loop condition.
-while z < 100000:
-    #print(z)
-    #print"########NEW ITERATION IN LOOP"
+while z < 1000:
     move_cat()
     move_owner()
-    # Add one.
     z += 1
  
 #for rows in cr:    
@@ -147,5 +136,4 @@ while z < 100000:
 
 
 print "List of stations where owners have found their cats"
-##print list_stations_found
 print list(set(list_stations_found)) 
