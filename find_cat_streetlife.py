@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+##Argument 1 : number of cat/owner
+
 import csv, sys, array
 from random import randint
 
@@ -77,12 +79,6 @@ def move_cat ():
     cats[pcat]=[int(list_conn[rand_npos])]
 
   pcat += 1
-  #print "cat number : ", pcat
-
-  #print list_conn
-  #print "tab of cats"
-
- #print cats
    
 ##
 ############Function move owner 
