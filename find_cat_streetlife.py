@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
-##Argument 1 : number of cat/owner
+##Argument 1 : number of cat/owner####
+
 
 import csv, sys, array
 from random import randint
@@ -66,7 +67,6 @@ def move_cat ():
   list_conn = [ [] for j in xrange(20)]
   p = 0
   tfl_co = csv.reader(open("tfl_connections.csv","rb"))
- #print cat[0]
  
   for row in tfl_co:
    if str(cat).strip('[]').replace("'", "") == row[0]:
@@ -75,7 +75,6 @@ def move_cat ():
     p +=1
     p2 = p-1
     rand_npos = randint(0,p2)
-    #print "randint : ", rand_npos 
     cats[pcat]=[int(list_conn[rand_npos])]
 
   pcat += 1
@@ -101,7 +100,6 @@ def move_owner ():
   list_conn = [ [] for j in xrange(20)]
   p = 0
   tfl_co = csv.reader(open("tfl_connections.csv","rb"))
- #print cat[0]
 
   for row in tfl_co:
    if str(owner).strip('[]').replace("'", "") == row[0]:
