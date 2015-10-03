@@ -124,9 +124,6 @@ while z < 1000:
     move_owner()
     z += 1
  
-#for rows in cr:    
-#    print rows
- 
 
 print "Number of cats found :", len(list(set(list_stations_found)))
 print "List of stations where owners have found their cats"
